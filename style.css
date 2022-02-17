@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: -webkit-linear-gradient(to right, #ad5389, #3c1053); 
+  background: linear-gradient(to right, #ad5389, #3c1053); 
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+#input-text{
+    background-color: #3c1053;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#input-text::placeholder{
+   color: #bbb;
+   font-family: inherit;
+}
+
+#input-text:focus{
+    outline: none;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 2rem;
+    padding: rem;
+    background-color: #3c1053;
+    border-radius:20px; 
+}
+
+.avatar{
+    width: 120px;
+    margin: 1rem;
+    border-radius: 50%;
+    border: 10px solid #2b0441;
+    margin-top: -3rem;
+}
+
+.card-info{
+    padding: 1rem;
+}
+
+.card-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.card-list li{
+    font-size: 1rem;
+    margin: .8rem 0 1rem 0;
+}
+
+.username{
+    font-size: 1.5rem;
+    margin: .5rem 0;
+    font-weight: 500;
+}
+
+.company{
+    font-size: 1rem;
+    margin: .3rem 0 .5rem 0;
+    font-weight: 300;
+    color: #ddd;
+}
+
+.bio{
+    font-size: 1rem;
+    margin: 1rem 0 .5rem 0;
+}
+
+.repos{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: .8rem;
+    background-color:#2b0441;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+}
+
+.repos:hover{
+    transition: .3s;
+    background-color:#560983;
+}
+
+#repos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.error-text{
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 672px) {
+    body {
+      
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .avatar{
+        margin-top: 2rem;
+    }
+  }
+
+
+
+
+
